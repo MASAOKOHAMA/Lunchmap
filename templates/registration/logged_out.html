@@ -1,0 +1,10 @@
+{% extends '../layout.html' %}
+
+{% block content %}
+<style>
+    h1 {padding-top: 80px;}
+</style>
+<h1>Logged Out</h1>
+<p>Thanks for spending some quality time with the Web site today.</p>
+<p><a href='{% url "login" %}'>Log in again</a></p>
+{% endblock %}

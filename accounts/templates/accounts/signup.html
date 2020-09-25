@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<style>
+    h1 {padding-top: 80px;}
+</style>
+<h1>Sign up</h1>
+<section class='common-form'>
+    <form method='post'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type='submit'>Sign up</button>
+    </form>
+</section>
+{% endblock %}
